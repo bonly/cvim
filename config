@@ -1,5 +1,7 @@
 let barposition = "bottom"
 
+map gb :buffer<Space>
+
 getIP() -> {{
 httpRequest({url: 'http://api.ipify.org/?format=json', json: true},
             function(res) { Status.setMessage('IP: ' + res.ip); });
