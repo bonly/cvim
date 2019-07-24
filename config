@@ -1,1 +1,9 @@
 let barposition = "bottom"
+
+getIP() -> {{
+httpRequest({url: 'http://api.ipify.org/?format=json', json: true},
+            function(res) { Status.setMessage('IP: ' + res.ip); });
+}}
+
+" Displays your public IP address in the status bar
+map ci :call getIP<CR>
