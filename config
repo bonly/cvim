@@ -1,3 +1,7 @@
+set nohud
+set nosmoothscroll
+set noautofocus 
+
 let barposition = "bottom"
 
 map gb :buffer<Space>
