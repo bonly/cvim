@@ -13,3 +13,5 @@ httpRequest({url: 'http://api.ipify.org/?format=json', json: true},
 
 " Displays your public IP address in the status bar
 map ci :call getIP<CR>
+
+let blacklists = ["https://mail.google.com/*","https://192.168.1.111:8006/*"]
